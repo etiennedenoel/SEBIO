@@ -120,6 +120,9 @@ q {
 /************************************************
 /* ACCUEIL
 ************************************************/
+html {
+  background: url(../img/bg.jpg) repeat;
+}
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -133,7 +136,7 @@ header,
 }
 header {
   padding-top: 20px;
-  background: url(../img/bg-head2.jpg) repeat;
+  background: url(../img/bg-head3.jpg) repeat;
   position: relative;
   z-index: 1;
 }
@@ -350,19 +353,23 @@ header nav .deroule:hover {
   display: inline-block;
   position: relative;
   z-index: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 30px;
 }
 #content .articles {
   display: inline;
   float: left;
   width: 700px;
   margin: 0 10px;
-  height: 90px;
 }
 #content .articles article {
+  position: relative;
   width: 200px;
   margin: 10px 14px;
   display: inline-block;
+  min-height: 350px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
   box-sizing: border-box;
 }
 #content .articles article img {
@@ -370,6 +377,54 @@ header nav .deroule:hover {
   margin: 10px;
   box-sizing: border-box;
   border: 1px solid #8dc63f;
+}
+#content .articles article .nomArt {
+  text-align: center;
+  color: #8dc63f;
+  font-weight: bold;
+  clear: both;
+  padding: 0 10px;
+  height: 75px;
+}
+#content .articles article .price {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #ebf9d8;
+}
+#content .articles article .ajout {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #8dc63f;
+  cursor: pointer;
+}
+#content .articles article .ajout:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+#content .articles .plus {
+  float: right;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.2em;
+  color: #8dc63f;
+  font-weight: bold;
+}
+#content .articles .plus:hover {
+  text-decoration: none;
 }
 #content #sidebar {
   display: inline;
@@ -388,7 +443,7 @@ header nav .deroule:hover {
   font-family: 'Bad Script', cursive;
   font-size: 1.7em;
   border-bottom: 1px solid #ffffff;
-  padding: 10px 10px 0 10px;
+  padding: 20px 10px 5px 20px;
   display: inline-block;
 }
 #content #sidebar .artSide {

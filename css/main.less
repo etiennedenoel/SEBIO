@@ -61,7 +61,7 @@ blockquote, q {
 /* ACCUEIL
 ************************************************/
 html{
-
+	background: url(../img/bg.jpg) repeat;
 }
 
 body{
@@ -79,7 +79,7 @@ header, #wrapper{
 
 header{
 	padding-top: 20px;
-	background: url(../img/bg-head2.jpg) repeat;
+	background: url(../img/bg-head3.jpg) repeat;
 	position: relative;
 	z-index: 1;
 	.slogan{
@@ -273,17 +273,19 @@ header{
 	display: inline-block;
 	position: relative;
 	z-index: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	padding-bottom: 30px;
 	.articles{
 		.column(9);
-		height: 90px;
 
 		article{
-
+			position: relative;
 			width: 200px;
 			margin: 10px 14px;
 			display: inline-block;
+			min-height: 350px;
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
+			vertical-align: top;
 			box-sizing: border-box;
 			img{
 				display: inline-block;
@@ -292,8 +294,55 @@ header{
 				border: 1px solid @vert;
 
 			}
+			.nomArt{
+				text-align: center;
+				color: @vert;
+				font-weight: bold;
+				clear: both;
+				padding: 0 10px;
+				height: 75px;
+			}
+			.price{
+				width: 30%;
+				float: left;
+				margin: 10px;
+				padding: 10px;
+				font-size: 1.2em;
+				font-weight: bold;
+				display: inline-block;
+				text-align: center;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+				background-color: @vertclair;
+			}
+			.ajout{
+				width: 30%;
+				margin: 10px;
+				padding: 10px;
+				font-size: 1.2em;
+				font-weight: bold;
+				display: inline-block;
+				text-align: center;
+				float: left;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+				background-color: @vert;
+				cursor: pointer;
+			}
+			.ajout:hover{
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+				color: @gris;
+			}
 		}
-
+		.plus{
+			float: right;
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 1.2em;
+			color: @vert;
+			font-weight: bold;
+		}
+		.plus:hover{
+			text-decoration: none;
+		}
 	}
 	#sidebar{
 		.column(3);
@@ -308,7 +357,7 @@ header{
 			font-family: 'Bad Script', cursive;
 			font-size: 1.7em;
 			border-bottom: 1px solid @gris;
-			padding: 10px 10px 0 10px;
+			padding: 20px 10px 5px 20px;
 			display: inline-block;
 		}
 		.artSide{
