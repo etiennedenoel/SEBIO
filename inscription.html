@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -48,9 +49,12 @@
                 </div>
 
                 <div class="panier">
-                    <img src="./img/panier.png"  width="67px" height="75px" alt="Voir les articles présents dans le panier" />
-                    <p class="rubrique">MON PANIER</p>
-                    <p class="nbArt">0 article</p>
+                    <a href="./panier.html">
+                        <img src="./img/panier.png"  width="67px" height="75px" alt="Voir les articles présents dans le panier" />
+                        <p class="rubrique">MON PANIER</p>
+                        <p class="nbArt">0 article</p>
+                    </a>
+
                 </div>
                 <nav>
                     <ul class="menu">
@@ -357,7 +361,7 @@
                         </li>
                     </ul>
                     <li class="search">
-                        <input class ="input" type="text" placeholder="Recherche">
+                        <input id="inputRecherche" class ="input" type="text" placeholder="Recherche">
                         <input type="submit" value="Go" class="submit" />
                     </li>
                 </nav>
@@ -567,8 +571,10 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.10.0.custom.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

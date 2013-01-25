@@ -15,7 +15,8 @@
         <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,7 +26,7 @@
         <!-- Add your site or application content here -->
         <header id="scroll">
             <div class="contenu">
-                <h1><a href="./index.html"><img src="./img/logo.png" alt="Sebio, site de vente en ligne"></a></h1>
+                <h1><a href="./index.html"><img src="./img/logo2.png" alt="Sebio, site de vente en ligne"></a></h1>
                 <div class="connex">
                     <p class="rubrique">MON COMPTE</p>
                     <a href="#" id="connexionButton">Se connecter</a>
@@ -48,9 +49,12 @@
                 </div>
 
                 <div class="panier">
-                    <img src="./img/panier.png"  width="67px" height="75px" alt="Voir les articles présents dans le panier" />
-                    <p class="rubrique">MON PANIER</p>
-                    <p class="nbArt">0 article</p>
+                    <a href="./panier.html">
+                        <img src="./img/panier.png"  width="67px" height="75px" alt="Voir les articles présents dans le panier" />
+                        <p class="rubrique">MON PANIER</p>
+                        <p class="nbArt">0 article</p>
+                    </a>
+
                 </div>
                 <nav>
                     <ul class="menu">
@@ -357,7 +361,7 @@
                         </li>
                     </ul>
                     <li class="search">
-                        <input class ="input" type="text" placeholder="Recherche">
+                        <input id="inputRecherche" class ="input searchform" type="text" placeholder="Recherche">
                         <input type="submit" value="Go" class="submit" />
                     </li>
                 </nav>
@@ -366,23 +370,12 @@
         <div id="wrapper">
             <div id="content">
                 <section class="pub">
-                    <img src="./img/solde.png" width="700px" height="339px" alt="Produits en solde">
+                    <div id="featured">
+                        <img src="./img/soldes.jpg" alt="Soldes de Janvier">
+                        <img src="./img/soldes2.jpg" alt="Filtres">
+                    </div>
                 </section>
-                <section id="sidebar">
-                    <h3>Avantages</h3>
-                    <ul class="artSide">
-                        <li>
-                            <a href="#">Enregistrez-vous</a> et recevez <strong>5% de remise sur votre 1ère commande!</strong>
-                        </li>
-                        <li>
-                            Frais d'envoi offerts à partir de 60€ de commande
-                        </li>
-                        <li>
-                            1 seul article acheté? <strong>1€ de frais d'envoi !</strong>
-                        </li>
-                        <li>Livraison en 1 jour</li>
-                    </ul>
-                </section>
+
                 <div class="articles">
                     <section class="nouveaux">
                         <hgroup>
@@ -395,33 +388,33 @@
                         </hgroup>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg"  width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Huile de soin & massage
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">22,95€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Diffuseur d'arômes "Difarôme"
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">56,90€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Crème éternelle Visage Anti-âge
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">34,95€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Huile de soin & massage
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">22,95€</div>
                             <div class="ajout"></div>
                         </article>
@@ -439,33 +432,33 @@
                         </hgroup>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Huile de soin & massage
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">22,95€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Diffuseur d'arômes "Difarôme"
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">56,90€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Crème éternelle Visage Anti-âge
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">34,95€</div>
                             <div class="ajout"></div>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <p class="nomArt" itemprop="name">
+                            <h3 class="nomArt" itemprop="name">
                                 Huile de soin & massage
-                            </p>
+                            </h3>
                             <div class="price" itemprop="price">22,95€</div>
                             <div class="ajout"></div>
                         </article>
@@ -526,7 +519,7 @@
                     </ul>
                 </section>
                 <section class="newsletter">
-                    <h4>Newsletter</h3>
+                    <h4>Newsletter</h4>
                     <form action="#">
                         <input type="text" class="email" placeholder="E-mail">
                         <input type="submit" class="submit" value="Ok">
@@ -536,17 +529,20 @@
         </footer>
         <div id="top"><a href="#scroll" title="Cliquez pour retourner en haut de la page"></a></div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.10.0.custom.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/orbit.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#featured').orbit();
+            });
         </script>
+        <script type="text/javascript">
+
     </body>
 </html>

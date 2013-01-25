@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -370,80 +371,43 @@
         <div id="wrapper">
             <section id="content">
                 <div id="breadcrump">
-                    <a href="./index.html">Accueil </a> > <a href="#"> Maison & jardin </a>
+                    <a href="./index.html">Accueil </a> > <a href="#"> panier </a>
                 </div>
-                <article class="fiche">
-                    <hgroup>
-                        <div class="titre">
-                            <div class="ruban">
-                                <h2>Filtration à eau</h2>
-                            </div>
-                            <div class="omb"></div>
+                <div id="pagePanier">
+                    <div class="titre">
+                        <div class="ruban">
+                            <h2>Panier</h2>
                         </div>
-                    </hgroup>
-                    <section class="left">
-                        <h3><img src="./img/fiche.jpg" alt="Image de l'article" /></h3>
-                    </section>
-                    <section class="right">
-                        <h3>Carafe filtrante "Marella Cool"</h3>
-                        <ul class="description" >
-                            <li> L'indicateur électronique vous rappelle automatiquement qu'il faut remplacer la cartouche filtrante toutes les 4 semaines.</li>
-                            <li>Modèle facile à remplir avec son couvercle maniable à une main et son clapet de remplissage pratique.</li>
-                            <li>Design moderne, tendance.</li>
-                            <li>Se range idéalement dans la porte du réfrigérateur ou sur la table</li>
-                            <li>1,4 litre d'eau filtrée, 2,4 litres de volume total.</li>
-                        </ul>
-                    </section>
-                    <section class="detail">
-                        <h3><strong>Commande</strong></h3>
-                        <p>Quantité</p>
-                        <form action="#">
-                            <label for="nombre">
-                                <input type="number" step="1" id="nombre">
-                            </label>
-                        </form>
-                        <span class="total">TOTAL:</span>
-                        <span class="prix">19,95€</span>
-                        <div class="ajoutFiche"><p>Ajouter au panier</p></div>
-                    </section>
-                </article>
-                <div class="maybeMore">
-
-                    <section>
-                        <h4>Les personnes ayant consulté cet article ont également consulté</h4>
-                        <article>
-                            <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1"></a>
-                            <h5 class="nomArt">
-                                Huile de soin & massage
-                            </h5>
-                            <div class="price">22,95€</div>
-                            <div class="ajout"></div>
-                        </article>
-                        <article>
-                            <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2"></a>
-                            <h5 class="nomArt">
-                                Diffuseur d'arômes "Difarôme"
-                            </h5>
-                            <div class="price">56,90€</div>
-                            <div class="ajout"></div>
-                        </article>
-                        <article>
-                            <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3"></a>
-                            <h5 class="nomArt">
-                                Crème éternelle Visage Anti-âge
-                            </h5>
-                            <div class="price">34,95€</div>
-                            <div class="ajout"></div>
-                        </article>
-                        <article>
-                            <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1"></a>
-                            <h5 class="nomArt">
-                                Huile de soin & massage
-                            </h5>
-                            <div class="price">22,95€</div>
-                            <div class="ajout"></div>
-                        </article>
-                    </section>
+                        <div class="omb"></div>
+                    </div>
+                    <table class="panierGlobal">
+                        <thead>
+                            <tr>
+                                <th>Article</th>
+                                <th>Quantité</th>
+                                <th>Prix</th>
+                                <th>total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1"><a href="./article" alt="aller vers la page de l'article">Huile de soin & massage</a> <span class="delete"><span</td>
+                                <td> <input type="number" step="1" value="1" class="nombre"></td>
+                                <td>22,95€</td>
+                                <td class="tot">22,95</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2"><a href="./article" alt="aller vers la page de l'article">Diffuseur d'âromes "Diffarôme"</a><span class="delete"><span></td>
+                                <td><input type="number" step="1" value="1" class="nombre"></td>
+                                <td>56,90€</td>
+                                <td class="tot">56,90€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="totalpanier">
+                        <h3>TOTAL: </h3>
+                        <p>79,85€</p>
+                    </div>
                 </div>
             </section>
         </div>
