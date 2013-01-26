@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Sebio - E-commerce</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -15,6 +14,7 @@
         <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
 
     </head>
@@ -24,13 +24,14 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header id="scroll">
+         <header id="scroll">
             <div class="contenu">
                 <h1><a href="./index.html"><img src="./img/logo2.png" alt="Sebio, site de vente en ligne"></a></h1>
                 <div class="connex">
+                    <h2 class="cache">Compte</h2>
                     <p class="rubrique">MON COMPTE</p>
-                    <a href="#" id="connexionButton">Se connecter</a>
-                    <a href="./inscription.html">Créer un compte</a>
+                    <a href="#" title="Appuyez pour vous connecter" id="connexionButton">Se connecter</a>
+                    <a href="./inscription.html" alt="Cliquez ici pour créer un compte">Créer un compte</a>
                     <div id="panneauConnex">
                         <form action="#">
                             <div class="champ">
@@ -49,8 +50,9 @@
                 </div>
 
                 <div class="panier">
-                    <a href="./panier.html">
-                        <img src="./img/panier.png"  width="67px" height="75px" alt="Voir les articles présents dans le panier" />
+                    <h2 class="cache">Panier</h2>
+                    <a href="./panier.html" alt="Accès à votre panier">
+                        <img src="./img/panier.png"  width="67" height="75" alt="Voir les articles présents dans le panier" />
                         <p class="rubrique">MON PANIER</p>
                         <p class="nbArt">0 article</p>
                     </a>
@@ -58,13 +60,15 @@
                 </div>
                 <nav>
                     <ul class="menu">
+                        <h2 class="cache">Menu de Navigation</h2>
                         <li class="deroule">
+                            <h3 class="cache">Bons plans</h3>
                             <a href="#">Bons plans</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Bons plans</span>
-                                    <img src="./img/bon.png" width="180px" height="180px" alt="Menu - Bons plans">
-                                    <p>Découvrez les promotions, déstockages ... Des articles de qualités à prix encore plus réduit</p>
+                                    <img src="./img/bon.png" width="180" height="180" alt="Menu - Bons plans">
+                                    <p>Découvrez les promotions, déstockages &hellip; Des articles de qualités à prix encore plus réduit</p>
                                 </li>
                                 <li class="sousmenu">
                                     <ul>
@@ -110,11 +114,12 @@
                             </ul>
                         </li>
                         <li class="deroule">
+                            <h3 class="cache">Vêtements</h3>
                             <a href="#">Vêtements</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Vêtements</span>
-                                    <img src="./img/vtmnts.jpg" width="180px" height="180px" alt="Menu - Vêtements">
+                                    <img src="./img/vtmnts.jpg" width="180" height="180" alt="Menu - Vêtements">
                                     <p>Porter des vêtements qui respectent à la fois votre peau, l'environnement  et le producteur, c'est possible !</p>
                                 </li>
                                 <li class="sousmenu">
@@ -160,12 +165,13 @@
                             </ul>
                         </li>
                         <li class="deroule">
+                            <h3 class="cache">Hygiène</h3>
                             <a href="#">Hygiène</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Hygiène</span>
-                                    <img src="./img/hygiene.jpg" width="180px" height="180px" alt="Menu - Hygiène">
-                                    <p>Les produits que vous trouverez ici ont été élaborés pour tirer le meilleur des plantes et vous soigner de manière naturelle...</p>
+                                    <img src="./img/hygiene.jpg" width="180" height="180" alt="Menu - Hygiène">
+                                    <p>Les produits que vous trouverez ici ont été élaborés pour tirer le meilleur des plantes et vous soigner de manière naturelle&hellip;</p>
                                 </li>
                                 <li class="sousmenu">
                                     <ul>
@@ -210,11 +216,12 @@
                             </ul>
                         </li>
                         <li class="deroule">
+                            <h3 class="cache">Bébé</h3>
                             <a href="#">Bébé</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Bébé</span>
-                                    <img src="./img/bebe.jpg"  width="180px" height="180px"  alt="Menu - Bébé">
+                                    <img src="./img/bebe.jpg"  width="180" height="180"  alt="Menu - Bébé">
                                     <p>Pour notre bébé nous voulons les meilleurs produits: savon et vêtements sains.</p>
                                 </li>
                                 <li class="sousmenu">
@@ -260,11 +267,12 @@
                             </ul>
                         </li>
                         <li class="deroule">
+                            <h3 class="cache">Alimentation</h3>
                             <a href="#">Alimentation</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Alimentation</span>
-                                    <img src="./img/alim.jpg" width="180px" height="146px" alt="Menu - Alimentation">
+                                    <img src="./img/alim.jpg" width="180" height="146" alt="Menu - Alimentation">
                                     <p>Alimentation bio et saine pour manger mieux.</p>
                                 </li>
                                 <li class="sousmenu">
@@ -310,12 +318,13 @@
                             </ul>
                         </li>
                         <li class="deroule">
+                            <h3 class="cache">Maison et Jardin</h3>
                             <a href="#">Maison & jardin</a>
                             <ul class="deroulant">
                                 <li class="descMenu">
                                     <span>Maison & jardin</span>
-                                    <img src="./img/maison.jpg" width="180px" height="180px" alt="Menu - Maison & jardin">
-                                    <p>Nous vous présentons ici une série de produits indispensables de notre vie quotidienne,écologiques pour une vie plus saine au jour le jour...</p>
+                                    <img src="./img/maison.jpg" width="180" height="180" alt="Menu - Maison & jardin">
+                                    <p>Nous vous présentons ici une série de produits indispensables de notre vie quotidienne, écologiques pour une vie plus saine au jour le jour&hellip;</p>
                                 </li>
                                 <li class="sousmenu">
                                     <ul>
@@ -360,16 +369,18 @@
                             </ul>
                         </li>
                     </ul>
-                    <li class="search">
-                        <input id="inputRecherche" class ="input searchform" type="text" placeholder="Recherche">
+                    <div class="search" role="search">
+                        <h3 class="cache">Recherche</h3>
+                        <input id="inputRecherche" class ="input" type="text" placeholder="Recherche">
                         <input type="submit" value="Go" class="submit" />
-                    </li>
+                    </div>
                 </nav>
             </div>
         </header>
         <div id="wrapper">
             <div id="content">
                 <section class="pub">
+                    <h2 class="cache">Publicités</h2>
                     <div id="featured">
                         <img src="./img/soldes.jpg" alt="Soldes de Janvier">
                         <img src="./img/soldes2.jpg" alt="Filtres">
@@ -378,14 +389,13 @@
 
                 <div class="articles">
                     <section class="nouveaux">
-                        <hgroup>
-                            <div class="titre">
-                                <div class="ruban">
-                                    <h2>Nouveaux articles</h2>
-                                </div>
-                                <div class="omb"></div>
+
+                        <div class="titre">
+                            <div class="ruban">
+                                <h2>Nouveaux articles</h2>
                             </div>
-                        </hgroup>
+                            <div class="omb"></div>
+                        </div>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg"  width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
                             <h3 class="nomArt" itemprop="name">
@@ -397,7 +407,7 @@
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
                             <h3 class="nomArt" itemprop="name">
-                                Diffuseur d'arômes "Difarôme"
+                                Diffuseur d'arômes &laquo;Difarôme&raquo;
                             </h3>
                             <div class="price" itemprop="price">56,90€</div>
                             <div class="ajout"></div>
@@ -422,14 +432,13 @@
                     </section>
                     <a href="./categorie.html" class="plus">Voir plus de nouveautés</a>
                     <section class="promotions">
-                        <hgroup>
                             <div class="titre">
                                 <div class="ruban">
                                     <h2>Articles en promotion</h2>
                                 </div>
                                 <div class="omb"></div>
                             </div>
-                        </hgroup>
+
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
                             <h3 class="nomArt" itemprop="name">
@@ -441,7 +450,7 @@
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
                             <h3 class="nomArt" itemprop="name">
-                                Diffuseur d'arômes "Difarôme"
+                                Diffuseur d'arômes &laquo;Difarôme&raquo;
                             </h3>
                             <div class="price" itemprop="price">56,90€</div>
                             <div class="ajout"></div>
@@ -469,16 +478,16 @@
         </div>
         <footer>
             <div class="contenu">
-                <section class="contact">
+                <section class="contact vcard">
                     <h4>Contact</h4>
-                    <address itemscope="" itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="contactType">SeBIO S.P.R.L.</span><br>
-                        <span itemprop="street-address">
+                    <address itemscope="" itemtype="http://schema.org/PostalAddress" class="adr">
+                        <span itemprop="contactType" class="org">SeBIO S.P.R.L.</span><br>
+                        <span itemprop="street-address" class="streetaddress">
                         101 A rue du Monténégro</span><br>
-                        <span itemprop="postal-code">1190</span><br>
-                        <span itemprop="locality">Bruxelles</span><br>
-                        <span itemprop="country-name">Belgique</span><br>
-                        <span itemprop="email"><a href="mailto:contact@sebio.be">contact@sebio.be</a></span>
+                        <span itemprop="postal-code" class="postal-code">1190</span><br>
+                        <span itemprop="locality" class="locality">Bruxelles</span><br>
+                        <span itemprop="country-name" class="country-name">Belgique</span><br>
+                        <span itemprop="email" class="email"><a href="mailto:contact@sebio.be">contact@sebio.be</a></span>
                     </address>
                 </section>
                 <section class="plan">
@@ -529,20 +538,15 @@
         </footer>
         <div id="top"><a href="#scroll" title="Cliquez pour retourner en haut de la page"></a></div>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-        <script src="js/vendor/jquery-ui-1.10.0.custom.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/orbit.js"></script>
-
-
-        <script type="text/javascript">
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js" ><\/script>')</script>
+        <script src="js/vendor/jquery-ui-1.10.0.custom.min.js" defer="defer"></script>
+        <script src="js/main.js" defer="defer"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js" defer="defer"></script>
+        <script src="js/orbit.js" defer="defer"></script>
+        <script type="text/javascript" defer="defer">
             $(window).load(function() {
                 $('#featured').orbit();
             });
         </script>
-        <script type="text/javascript">
-
     </body>
 </html>

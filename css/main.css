@@ -139,6 +139,9 @@ span.delete {
 span.delete:hover {
   background: url(../img/deleteH.png) no-repeat;
 }
+.cache {
+  display: none !important;
+}
 @media screen and (min-width: 960px) {
   .contenu,
   #wrapper {
@@ -4369,10 +4372,16 @@ span.delete:hover {
     text-align: center;
     border: 1px dotted #ec7807;
   }
+  #pagePanier .panierGlobal th:nth-child(2) {
+    display: none;
+  }
   #pagePanier .panierGlobal td {
     padding: 10px;
     border: 1px dotted #65b200;
     position: relative;
+  }
+  #pagePanier .panierGlobal td:nth-child(2) {
+    display: none;
   }
   #pagePanier .panierGlobal td a {
     color: black;
@@ -4388,8 +4397,7 @@ span.delete:hover {
     display: none;
   }
   #pagePanier .panierGlobal input {
-    width: 30px;
-    float: right;
+    display: none;
   }
   #pagePanier .panierGlobal .tot {
     font-size: 1em;

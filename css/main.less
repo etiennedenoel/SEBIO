@@ -88,7 +88,9 @@ span.delete{
 
 	}
 }
-
+.cache{
+	display: none !important;
+}
 @media screen and (min-width: 960px){
 
 	.contenu, #wrapper{
@@ -3834,11 +3836,19 @@ span.delete{
 				font-weight: bold;
 				text-align: center;
 				border: 1px dotted @orangefonce;
+				&:nth-child(2){
+					display: none;
+
+				}
 			}
 			td{
 				padding: 10px;
 				border: 1px dotted @vertfonce;
 				position: relative;
+				&:nth-child(2){
+					display: none;
+
+				}
 				a{
 					color: black;
 					text-decoration: none;
@@ -3854,8 +3864,7 @@ span.delete{
 				display: none;
 			}
 			input{
-				width: 30px;
-				float: right;
+				display: none;
 			}
 			.tot{
 				font-size: 1em;
