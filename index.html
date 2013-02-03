@@ -11,12 +11,10 @@
 
         <link rel="icon" type="image/ico" href="./favicon.ico" />
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-            <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+        <script src="./js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
     <body>
@@ -27,12 +25,12 @@
         <!-- Add your site or application content here -->
          <header id="scroll">
             <div class="contenu">
-                <h1><a href="./index.html"><img src="./img/logo2.png" alt="Sebio, site de vente en ligne"></a></h1>
+                <h1><a href="./index.html"><img src="./img/logo2.png" width="172" height="85" alt="Sebio, site de vente en ligne"></a></h1>
                 <div class="connex">
                     <h2 class="cache">Compte</h2>
                     <p class="rubrique">MON COMPTE</p>
                     <a href="#" title="Appuyez pour vous connecter" id="connexionButton">Se connecter</a>
-                    <a href="./inscription.html" alt="Cliquez ici pour créer un compte">Créer un compte</a>
+                    <a href="./inscription.html" title="Cliquez ici pour créer un compte">Créer un compte</a>
                     <div id="panneauConnex">
                         <form action="#">
                             <div class="champ">
@@ -52,7 +50,7 @@
 
                 <div class="panier">
                     <h2 class="cache">Panier</h2>
-                    <a href="./panier.html" alt="Accès à votre panier">
+                    <a href="./panier.html" title="Accès à votre panier">
                         <img src="./img/panier.png"  width="67" height="75" alt="Voir les articles présents dans le panier" />
                         <p class="rubrique">MON PANIER</p>
                         <p class="nbArt">0 article</p>
@@ -60,8 +58,9 @@
 
                 </div>
                 <nav>
+                    <h2 class="cache">Menu de Navigation</h2>
                     <ul class="menu">
-                        <h2 class="cache">Menu de Navigation</h2>
+
                         <li class="deroule">
                             <h3 class="cache">Bons plans</h3>
                             <a href="./categorie.html">Bons plans</a>
@@ -372,8 +371,10 @@
                     </ul>
                     <div class="search" role="search">
                         <h3 class="cache">Recherche</h3>
-                        <input id="inputRecherche" class ="input" type="text" placeholder="Recherche">
-                        <input type="submit" value="Go" class="submit" />
+                        <form action="http://sebio.etiennedenoel.be/recherche.html" method="get">
+                            <input id="inputRecherche" class ="input" type="text" placeholder="Recherche">
+                            <button type="submit" class="submit">Go</button>
+                        </form>
                     </div>
                 </nav>
             </div>
@@ -383,8 +384,8 @@
                 <section class="pub">
                     <h2 class="cache">Publicités</h2>
                     <div id="featured">
-                        <img src="./img/soldes.jpg" alt="Soldes de Janvier">
-                        <img src="./img/soldes2.jpg" alt="Filtres">
+                        <img src="./img/soldes.jpg" width="912" height="280" alt="Soldes de Janvier">
+                        <img src="./img/soldes2.jpg" width="912" height="280" alt="Filtres">
                     </div>
                 </section>
 
@@ -403,7 +404,7 @@
                                 Huile de soin & massage
                             </h3>
                             <div class="price" itemprop="price">22,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
@@ -411,7 +412,7 @@
                                 Diffuseur d'arômes &laquo;Difarôme&raquo;
                             </h3>
                             <div class="price" itemprop="price">56,90€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3" itemprop="image"></a>
@@ -419,7 +420,7 @@
                                 Crème éternelle Visage Anti-âge
                             </h3>
                             <div class="price" itemprop="price">34,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
@@ -427,7 +428,7 @@
                                 Huile de soin & massage
                             </h3>
                             <div class="price" itemprop="price">22,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
 
                     </section>
@@ -446,7 +447,7 @@
                                 Huile de soin & massage
                             </h3>
                             <div class="price" itemprop="price">22,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
@@ -454,7 +455,7 @@
                                 Diffuseur d'arômes &laquo;Difarôme&raquo;
                             </h3>
                             <div class="price" itemprop="price">56,90€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3" itemprop="image"></a>
@@ -462,7 +463,7 @@
                                 Crème éternelle Visage Anti-âge
                             </h3>
                             <div class="price" itemprop="price">34,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                         <article itemscope="" itemtype="http://schema.org/Product">
                             <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
@@ -470,7 +471,7 @@
                                 Huile de soin & massage
                             </h3>
                             <div class="price" itemprop="price">22,95€</div>
-                            <div class="ajout"></div>
+                            <a href="./panier.html" class="ajout"></a>
                         </article>
                     </section>
                     <a href="#" class="plus">Voir plus de promotions</a>
@@ -542,9 +543,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js" ><\/script>')</script>
         <script src="js/vendor/jquery-ui-1.10.0.custom.min.js" defer="defer"></script>
         <script src="js/main.js" defer="defer"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js" defer="defer"></script>
         <script src="js/orbit.js" defer="defer"></script>
-        <script type="text/javascript" defer="defer">
+        <script type="text/javascript">
             $(window).load(function() {
                 $('#featured').orbit();
             });

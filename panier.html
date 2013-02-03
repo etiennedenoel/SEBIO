@@ -32,7 +32,7 @@
                     <h2 class="cache">Compte</h2>
                     <p class="rubrique">MON COMPTE</p>
                     <a href="#" title="Appuyez pour vous connecter" id="connexionButton">Se connecter</a>
-                    <a href="./inscription.html" alt="Cliquez ici pour créer un compte">Créer un compte</a>
+                    <a href="./inscription.html" title="Cliquez ici pour créer un compte">Créer un compte</a>
                     <div id="panneauConnex">
                         <form action="#">
                             <div class="champ">
@@ -52,7 +52,7 @@
 
                 <div class="panier">
                     <h2 class="cache">Panier</h2>
-                    <a href="./panier.html" alt="Accès à votre panier">
+                    <a href="./panier.html" title="Accès à votre panier">
                         <img src="./img/panier.png"  width="67" height="75" alt="Voir les articles présents dans le panier" />
                         <p class="rubrique">MON PANIER</p>
                         <p class="nbArt">0 article</p>
@@ -60,8 +60,9 @@
 
                 </div>
                 <nav>
+                    <h2 class="cache">Menu de Navigation</h2>
                     <ul class="menu">
-                        <h2 class="cache">Menu de Navigation</h2>
+
                         <li class="deroule">
                             <h3 class="cache">Bons plans</h3>
                             <a href="./categorie.html">Bons plans</a>
@@ -390,7 +391,7 @@
                         </div>
                         <div class="omb"></div>
                     </div>
-                    <table class="panierGlobal" summary="Contenu du panier">
+                    <table class="panierGlobal">
                         <thead>
                             <tr>
                                 <th>Article</th>
@@ -402,7 +403,7 @@
                         <tbody>
                             <tr itemscope="" itemtype="http://schema.org/Product">
                                 <td>
-                                    <img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"><a href="./article" title="aller vers la page de l'article"><h3  itemprop="name">Huile de soin & massage</h3></a> <span class="delete"></span>
+                                    <img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"><a href="./article.html" title="aller vers la page de l'article"><h3  itemprop="name">Huile de soin & massage</h3></a> <span class="delete"></span>
                                 </td>
                                 <td> <input type="number" step="1" value="1" class="nombre"></td>
                                 <td itemprop="price">22,95€</td>
@@ -410,7 +411,7 @@
                             </tr>
                             <tr itemscope="" itemtype="http://schema.org/Product">
                                 <td>
-                                    <img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"><a href="./article" title="aller vers la page de l'article"  itemprop="url"><h3  itemprop="name">Diffuseur d'âromes &laquo;Difarôme&raquo;</h3></a><span class="delete"></span>
+                                    <img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"><a href="./article.html" title="aller vers la page de l'article"  itemprop="url"><h3  itemprop="name">Diffuseur d'âromes &laquo;Difarôme&raquo;</h3></a><span class="delete"></span>
                                 </td>
                                 <td><input type="number" step="1" value="1" class="nombre"></td>
                                 <td itemprop="price">56,90€</td>
@@ -421,6 +422,7 @@
                     <div id="totalpanier">
                         <h3>TOTAL: </h3>
                         <p>79,85€</p>
+                        <a href="./commande.html" class='cmd'>Commander</a>
                     </div>
                 </div>
             </section>

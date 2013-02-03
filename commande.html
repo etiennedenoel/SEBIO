@@ -382,81 +382,132 @@
             <section id="content">
                 <div id="breadcrump">
                     <h3 class="cache">Page de l'article</h3>
-                    <a href="./index.html">Accueil </a> > <a href="#"> Maison & jardin </a>
+                    <a href="./index.html">Accueil </a> > <a href="#"> commande </a>
                 </div>
-                <article class="fiche">
-
-                        <div class="titre">
-                            <div class="ruban">
-                                <h2>Filtration à eau</h2>
-                            </div>
-                            <div class="omb"></div>
+                <div class="commande">
+                    <div class="titre">
+                        <div class="ruban">
+                            <h2>Adresse de Livraison</h2>
                         </div>
+                        <div class="omb"></div>
+                    </div>
 
-                    <section class="left">
-                        <h3><img src="./img/fiche.jpg" alt="Image de l'article" /></h3>
-                    </section>
-                    <section class="right">
-                        <h3>Carafe filtrante "Marella Cool"</h3>
-                        <ul class="description" >
-                            <li> L'indicateur électronique vous rappelle automatiquement qu'il faut remplacer la cartouche filtrante toutes les 4 semaines.</li>
-                            <li>Modèle facile à remplir avec son couvercle maniable à une main et son clapet de remplissage pratique.</li>
-                            <li>Design moderne, tendance.</li>
-                            <li>Se range idéalement dans la porte du réfrigérateur ou sur la table</li>
-                            <li>1,4 litre d'eau filtrée, 2,4 litres de volume total.</li>
-                        </ul>
-                    </section>
-                    <section class="detail">
-                        <h3><strong>Commande</strong></h3>
-                        <p>Quantité</p>
-                        <form action="#">
-                            <label for="nombre">
-                                <input type="number" step="1" id="nombre">
-                            </label>
+                    <div class='livraison'>
+                        <h3>Envoyer à cette adresse de livraison?</h3>
+                        <address>
+                            <span>Etienne Denoel</span><br>
+                            <span>Avenue Libert Froidmont 40</span><br>
+                            <span>Haccourt, 4684 </span><br>
+                            <span>Belgique</span>
+                        </address>
+                        <a href="#" class="cmd">Commander</a>
+                    </div>
+
+                    <div>
+                        <form action="#" id="inscription">
+                            <fieldset>
+                                <div class="titre">
+                                    <div class="ruban">
+                                        <h2>Nouvelle adresse de livraison</h2>
+                                    </div>
+                                    <div class="omb"></div>
+                                </div>
+
+                                <label for="tva">N° de TVA</label>
+                                <input type="text" id="tva">
+                                <label for="genre">Genre</label>
+                                <select name="genre" id="genre">
+                                    <option value="Homme">Homme</option>
+                                    <option value="Femme">Femme</option>
+                                </select>
+                                <label for="civil">Civilité</label>
+                                <select name="civil" id="civil">
+                                    <option value="Monsieur">M.</option>
+                                    <option value="Madame">Mme</option>
+                                    <option value="Mademoiselle">Mlle</option>
+                                </select>
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom">
+                                <label for="nom">Nom</label>
+                                <input type="text" id="nom">
+                                <label for="adr">Adresse</label>
+                                <input type="text" id="adr">
+                                <label for="codePost">Code postal</label>
+                                <input type="text" id="codePost">
+                                <label for="ville">Ville</label>
+                                <input type="text" id="ville">
+                                <label for="pays">Pays</label>
+                                <select name="pays" id="pays">
+                                  <option data-abbr="BE" value="56" selected="selected">Belgique / België (Belgium)</option>
+                                  <option data-abbr="FR" value="250">France</option>
+                                  <option data-abbr="CZ" value="203">Česká republika (Czech Republic)</option>
+                                  <option data-abbr="CY" value="196">Cyprus</option>
+                                  <option data-abbr="DK" value="208">Danmark (Denmark)</option>
+                                  <option data-abbr="DE" value="276">Deutschland (Germany)</option>
+                                  <option data-abbr="AF" value="4">Afghanistan</option>
+                                  <option data-abbr="GR" value="300">Ελλάδα (Greece)</option>
+                                  <option data-abbr="ES" value="724">España (Spain)</option>
+                                  <option data-abbr="IE" value="372">Ireland</option>
+                                  <option data-abbr="IT" value="380">Italia (Italy)</option>
+                                  <option data-abbr="LV" value="428">Latvija (Latvia)</option>
+                                  <option data-abbr="LT" value="440">Lietuva (Lithuania)</option>
+                                  <option data-abbr="LU" value="442">Luxembourg</option>
+                                  <option data-abbr="HU" value="348">Magyarország (Hungary)</option>
+                                  <option data-abbr="MT" value="470">Malta</option>
+                                  <option data-abbr="NL" value="528">Nederland (Netherlands)</option>
+                                  <option data-abbr="AT" value="40">Österreich (Austria)</option>
+                                  <option data-abbr="PL" value="616">Polska (Poland)</option>
+                                  <option data-abbr="PT" value="620">Portugal</option>
+                                  <option data-abbr="CH" value="756">Suisse / Schweiz (Switzerland)</option>
+                                  <option data-abbr="SI" value="705">Slovenija (Slovenia)</option>
+                                  <option data-abbr="SK" value="703">Slovenská republika (Slovakia)</option>
+                                  <option data-abbr="FI" value="246">Suomi (Finland)</option>
+                                  <option data-abbr="SE" value="752">Sverige (Sweden)</option>
+                                  <option data-abbr="GB" value="826">United Kingdom</option>
+                                  <option data-abbr="US" value="840">United States</option>
+                                  <option data-abbr="BO" value="68">Bolivia</option>
+                                  <option data-abbr="GA" value="266">Gabon</option>
+                                  <option data-abbr="ZR" value="180">Congo, Democratic Republic of the</option>
+                                  <option data-abbr="SN" value="686">Senegal</option>
+                                  <option data-abbr="MY" value="458">Malaysia</option>
+                                  <option data-abbr="ML" value="466">Mali</option>
+                                  <option data-abbr="RU" value="643">Россия (Russian Federation)</option>
+                                  <option data-abbr="KE" value="404">Keeniyaa (Kenya)</option>
+                                  <option data-abbr="JP" value="392">日本 (Japan)</option>
+                                  <option data-abbr="CA" value="124">Canada</option>
+                                  <option data-abbr="TR" value="792">Türkiye (Turkey)</option>
+                                    <option data-abbr="MF" value="663">Saint-Martin</option>
+                                </select>
+                                <label for="telephoneDom">Téléphone domicile</label>
+                                <input type="tel" id="telephoneDom">
+                                <label for="telephonePortable">Téléphone portable</label>
+                                <input type="tel" name="telephonePortable" id="telephonePortable">
+
+                                <a href='#' class='cmd'>Valider</a>
+                            </fieldset>
                         </form>
-                        <span class="total">TOTAL:</span>
-                        <span class="prix">19,95€</span>
-                        <div class="ajoutFiche"><a href="./panier.html">Ajouter au panier</a></div>
-                    </section>
-                </article>
-                <div class="maybeMore">
-
-                    <section>
-                        <h4>Les personnes ayant consulté cet article ont également consulté</h4>
-                         <article itemscope="" itemtype="http://schema.org/Product">
-                            <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <h3 class="nomArt" itemprop="name">
-                                Huile de soin & massage
-                            </h3>
-                            <div class="price" itemprop="price">22,95€</div>
-                            <a href="./panier.html" class="ajout"></a>
-                        </article>
-                        <article itemscope="" itemtype="http://schema.org/Product">
-                            <a href="./article.html" title="Voir article"><img src="./img/new2.jpg" width="180" height="180" alt="Article numéro 2" itemprop="image"></a>
-                            <h3 class="nomArt" itemprop="name">
-                                Diffuseur d'arômes &laquo;Difarôme&raquo;
-                            </h3>
-                            <div class="price" itemprop="price">56,90€</div>
-                            <a href="./panier.html" class="ajout"></a>
-                        </article>
-                        <article itemscope="" itemtype="http://schema.org/Product">
-                            <a href="./article.html" title="Voir article"><img src="./img/new3.jpg" width="180" height="180" alt="Article numéro 3" itemprop="image"></a>
-                            <h3 class="nomArt" itemprop="name">
-                                Crème éternelle Visage Anti-âge
-                            </h3>
-                            <div class="price" itemprop="price">34,95€</div>
-                            <a href="./panier.html" class="ajout"></a>
-                        </article>
-                        <article itemscope="" itemtype="http://schema.org/Product">
-                            <a href="./article.html" title="Voir article"><img src="./img/new1.jpg" width="180" height="180" alt="Article numéro 1" itemprop="image"></a>
-                            <h3 class="nomArt" itemprop="name">
-                                Huile de soin & massage
-                            </h3>
-                            <div class="price" itemprop="price">22,95€</div>
-                            <a href="./panier.html" class="ajout"></a>
-                        </article>
-                    </section>
+                    </div>
                 </div>
+                <aside id="sidebar">
+                    <h3>Payement sécurisé</h3>
+                    <ul class="artSide">
+                        <li>
+                            Payement sécurisé par Paypal ou Crédit Mutuel
+                        </li>
+                        <li>
+                            Possibilité de payement par Visa, Bancontact,
+                        </li>
+                    </ul>
+                    <h3>Mode de livraison</h3>
+                    <ul class="artSide">
+                        <li>
+                            Collisimo
+                        </li>
+                        <li>
+                            bpost
+                        </li>
+                    </ul>
+                </aside>
             </section>
         </div>
         <footer>
